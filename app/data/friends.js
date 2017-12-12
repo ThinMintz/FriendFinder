@@ -21,7 +21,6 @@ var friends = [
       2
     ]
 },
-
 {
   "name":"Bender",
   "photo":"https://s-media-cache-ak0.pinimg.com/originals/fd/7b/ed/fd7bedc096282be66275f442506eac36.jpg",
@@ -34,3 +33,5 @@ var friends = [
     ]
 }
 ];
+
+module.exports = friends;
