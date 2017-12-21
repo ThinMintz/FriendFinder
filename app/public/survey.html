@@ -8,8 +8,7 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
     </head>
 
@@ -18,43 +17,46 @@
 <h1>Friend Finder</h1>
 
   <div class="input-field col s12">
-<!--   	<h2>Question 1: You find a purse, with some money</h2> -->
+	<h5>Question 1: You find a purse, with some money, what would you do?</h5>
     <select>
-      <option value="" disabled selected>Choose your option</option>
+      <option value="">Choose your option</option>
       <option value="1">Use the money inside to buy pizza for your friends</option>
       <option value="2">Turn in the money to the police</option>
       <option value="3">Buy booze and possibly robotic hookers</option>
     </select>
-    <label>Question 1: You find a purse, with some money</label>
   </div>
 
-    <div class="input-field col s12">
-<!--   	<h2>Question 1: You find a purse, with some money</h2> -->
+<div class="input-field col s12">
+<h5>Question 2: You experience space travel, what do you do?</h5>
     <select>
-      <option value="" disabled selected>Choose your option</option>
+      <option value="">Choose your option</option>
       <option value="1">Look up relatives and befriend mutants and robots</option>
       <option value="2">Try to regain your lost childhood with your parents</option>
       <option value="3">Hand over your only son to the Robot Devil</option>
     </select>
-    <label>Question 2: You go experience space travel, what do you do?</label>
   </div>
 
     <div class="input-field col s12">
-<!--   	<h2>Question 1: You find a purse, with some money</h2> -->
+  <h5>Question 3: Your ideal mate is:</h5>
     <select>
-      <option value="" disabled selected>Choose your option</option>
+      <option value="">Choose your option</option>
       <option value="1">A purple haired cyclops</option>
       <option value="2">A red haired delivery boy</option>
       <option value="3">I don't need anyone, since you are a lone wolf and a cuddly baby tapir</option>
     </select>
-    <label>Question 3: Your ideal mate is: </label>
   </div>
 
 
       <!--Import jQuery before materialize.js-->
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('select').material_select();
+  });
+
+  </script>
+
     </body>
   </html>
