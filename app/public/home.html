@@ -20,13 +20,14 @@
       </div>
    <br>
 
-     <div class="row">
-    <div class="col s12 m6">
-      <div class="card center">
-        <div class="card-image">
+     <div class="row center">
+    <div class="col s12 m6 offset-3">
+      <div class="card">
+        <div class="card-image center-align">
           <img src="http://images.fanpop.com/images/image_uploads/bender--fry-and-leela-futurama-338219_500_375.jpg">
-          <span class="card-title">Fry, Leela or Bender?</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+  <button class="btn waves-effect waves-light" type="submit" name="action" a href="survey.html">Let's find out!
+  </button>
         </div>
         <div class="card-content">
           <p>Which member of planet express will you be friends with?</p>
@@ -42,7 +43,12 @@
         <script>
         $(document).ready(function() {
             $('select').material_select();
+/*            $(".submit").on("click", function(event) {
+              event.preventDefault();
+            })*/
+
         });
+
         </script>
     </div> <!-- container -->
 </body>
